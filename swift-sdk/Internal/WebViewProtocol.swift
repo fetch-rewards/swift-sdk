@@ -16,7 +16,7 @@ protocol WebViewProtocol {
     var position: ViewPosition { get }
     @discardableResult func loadHTMLString(_ string: String, baseURL: URL?) -> WKNavigation?
     func set(position: ViewPosition)
-    func set(navigationDelegate: WKNavigationDelegate?)ß
+    func set(navigationDelegate: WKNavigationDelegate?)
     func layoutSubviews()
     func calculateHeight() -> Future<CGFloat, IterableError>
 }
